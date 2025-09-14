@@ -1,0 +1,5 @@
+EEG/
+old/
+__pycache__/
+gaf_images_cache.pkl
+processed_eeg_cache.pkl
