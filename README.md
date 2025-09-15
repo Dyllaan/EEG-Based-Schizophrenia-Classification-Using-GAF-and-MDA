@@ -53,9 +53,7 @@ These are combined in the data source folder 'EEG'.
 
 ### Requires
 - Python (built on 3.12.4)
-### 
-
-## Requires
+### PIP Libraries
 - pandas
 - numpy
 - torch
