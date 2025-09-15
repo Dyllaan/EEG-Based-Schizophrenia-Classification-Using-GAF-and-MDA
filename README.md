@@ -48,10 +48,10 @@ These are combined in the data source folder 'EEG'.
 
 ### CNN Pipeline
 - 3-layer architecture with batch normalisation and dropout
-- SGD optimiser with plateau learning rate scheduling
+- SGD optimiser with plateau learning rate scheduling (although Adam Optimiser and Cosine Annealing are supported).
 - Early stopping (7-epoch patience) and warmup (5 epochs)
 
-### Requires
+## Requires
 - Python (built on 3.12.4)
 ### PIP Libraries
 - pandas
@@ -63,3 +63,5 @@ These are combined in the data source folder 'EEG'.
 - matplotlib
 - pyts
 - tensorly
+### Bonuses
+- CUDA enabled device for CNN training.
