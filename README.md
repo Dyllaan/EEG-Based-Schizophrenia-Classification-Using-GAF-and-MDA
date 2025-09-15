@@ -24,6 +24,13 @@ The MDA approach demonstrated superior performance with a 13.31 percentage point
 - **Class Distribution**: 1,728 controls, 2,646 schizophrenia cases
 - **Validation**: 3-fold stratified cross-validation
 
+The EEG data is from a sensory task involving control and schizophrenic groups with 81 total subjects.
+
+The dataset is in two parts:
+1. https://www.kaggle.com/datasets/broach/button-tone-sz
+2. https://www.kaggle.com/datasets/broach/buttontonesz2
+
+These are combined in the data source folder 'EEG'.
 ## Methodology
 
 ### Data Preprocessing
@@ -41,5 +48,20 @@ The MDA approach demonstrated superior performance with a 13.31 percentage point
 
 ### CNN Pipeline
 - 3-layer architecture with batch normalisation and dropout
-- SGD optimiser with plateau learning rate scheduling
+- SGD optimiser with plateau learning rate scheduling (although Adam Optimiser and Cosine Annealing are supported).
 - Early stopping (7-epoch patience) and warmup (5 epochs)
+
+## Requires
+- Python (built on 3.12.4)
+### PIP Libraries
+- pandas
+- numpy
+- torch
+- torchvision
+- scikit-learn (sklearn)
+- scipy
+- matplotlib
+- pyts
+- tensorly
+### Bonuses
+- CUDA enabled device for CNN training.
